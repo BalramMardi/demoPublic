@@ -37,11 +37,6 @@ app.use("/api/v1/teams", teamsRoute);
 app.use("/api/v1/match", matchRoute);
 app.use("/api/v1/league", leagueRoute);
 
-app.get("/", (req, res) => {
-  res.send({
-    message: "Welcome to the app",
-  });
-});
 
 //static
 app.use(express.static(path.join(__dirname, "./client/build")));
